@@ -1,0 +1,10 @@
+section .sectionone {
+  height: 1000px;
+  width: 100px;
+  background-color: black; }
+  section .sectionone p {
+    color: white;
+    font-size: 64px;
+    font-weight: 400; }
+    section .sectionone p span {
+      font-weight: 700; }

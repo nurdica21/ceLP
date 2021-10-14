@@ -1,0 +1,104 @@
+.container{
+    
+    background-color: black;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+    padding: 80px;
+    justify-content: space-evenly;
+
+    @media(max-width: 1365px){
+
+        
+      display: flex;
+      
+    }
+
+    @media(max-width: 1050px){
+
+        
+        display: block;
+        text-align: center;
+        
+    }
+
+    @media(max-width: 460px){
+
+        
+        padding: 20px;
+        
+    }
+
+    @media(max-width: 460px){
+
+        
+        padding: 0;
+        
+    }
+
+     .card{
+            
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 40px 35px;
+            cursor: pointer;
+            margin: 5px 15px;
+            background-position: center;
+            background-size: cover;
+            transition: 0.5s;
+
+            @media(max-width: 330px){
+
+               width: 150px;
+        
+            }
+
+           
+            &:hover{
+                
+                transform: translateY(-10px);
+            }
+
+           
+        }
+
+      
+        .card1{
+            background-image: url(../img/audi1.jpg);
+            
+            &:hover{
+                opacity: 0.6;
+                
+            }
+
+           
+            
+        }
+        .card2{
+            background-image: url(../img/shifter.jpg);
+
+            &:hover{
+                opacity: 0.6;
+             
+            }
+        }
+        .card3{
+            background-image: url(../img/rucna2.jpg);
+
+            &:hover{
+                opacity: 0.6;
+               
+            }
+        }
+        .card4{
+            background-image: url(../img/interier.jpg);
+
+            &:hover{
+                opacity: 0.6;
+               
+            }
+        }
+           
+}

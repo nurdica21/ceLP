@@ -1,0 +1,155 @@
+header{
+
+    .pre-header{
+        
+        font-size: 12px;
+        height: 20px;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 56%, rgba(98,98,85,1) 97%);
+        color: grey;
+        text-align: center;
+        padding-top: 10px;
+
+       @media(max-width: 400px){
+
+        font-size: 10px;
+
+       }
+        
+        ul{
+            text-align: center;
+            top:0;
+
+            li{
+                display: inline-block;
+                padding-left: 30px;
+
+              
+             
+                @media(max-width: 650px){
+
+                   &:first-child{
+                       display: none;
+                   }
+            
+                  }
+
+                 
+            }
+        }
+    }
+
+     nav{
+           
+
+        height: 50px;
+        width: auto;
+        background-color: black;
+        padding: 15px;
+
+        @media(max-width: 670px){
+
+            height: auto;
+            
+        }
+        
+        .hamburger-menu{
+
+            
+            display: none;
+
+            @media(max-width: 670px){
+
+                
+                display: block;
+            }
+             
+            
+            img{
+                float: left;
+                padding-left: 30px;
+                display: none;
+    
+                @media(max-width: 670px){
+    
+                    display: block;
+                }
+            }
+
+            
+        }
+
+        img{
+            
+            float: right;
+            padding-right: 30px;
+
+            @media(max-width: 670px){
+
+                display: none;
+            }
+          
+        }
+
+        ul{
+            @media(max-width: 670px){
+
+                display: none;
+            }
+
+            li{
+
+             display: inline-block;
+             list-style: none;
+             margin-left: 30px;
+             margin-top: 6px;
+
+             &:first-child{
+                 font-size: 24px;
+                a:hover {
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+            @media(max-width: 670px){
+
+                display: block;
+                text-align: center;
+               
+               
+            }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    position: relative;
+
+                    
+
+                    &:hover{
+                        &:after{
+                            display: block;
+                        }
+                        
+                    }
+                    &:after{
+                        content: '';
+                        display: none;
+                        background-color: white;
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                    }
+
+                    
+                    
+                }
+            
+            }
+        }
+
+    }
+
+}
